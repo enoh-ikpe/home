@@ -5,23 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <div class="content">
-       <div>
-           <button class="button1"></button>
-         <h3>BASE APPAREL</h3> 
-       <h1> <span>WE'RE</span><div> COMING <div>SOON</div></div></h1>
-       <p>Hello fashion shoppers! We're currently building our new <br> fashion store.
-           Add your email below to stay up-to-date with <br> announcements and our launch 
+    <header class="mobile-logo">
+        <img class="logo" src="logo.svg" alt="">
+    </header>
+<div class="container">
+            <div class="left-side">
+             <div class="container-fluid">
+                 <header class="desktop-logo">
+                 <img class="logo" src="logo.svg" alt="">
+             </header>
+       <h1> <span>WE'RE</span><div class="h1"> COMING <br> SOON</div></h1>
+       <p class="text-card">Hello fashion shoppers! We're currently building our new fashion store.
+           Add your email below to stay up-to-date with announcements and our launch 
            deals.
        </p>
-       <button class="button2">Email-Address<i class="fas fa-chevron-right"></i></button>
-       
-       </div>
-       <div>
-           <img src="./hero-desktop.jpg" alt="girlie" height="500px">
+       <form>
+           <div class="sub-div">
+               <input class="text" type="email" placeholder="Email Address">
+        <button class="grad">
+            <img src="./images/icon-arrow.svg" alt="arrow" width="7px">
+        </button>
+           </div>
+        <!-- <small>Please provide a valid email.</small>
+        <img class="error-icon" src="./images/icon-error.svg" alt="error"> -->
+    </form>
+             </div>
+        </div>
+        <div class="right-side">
+            <img src="./images/hero-desktop.jpg" alt="" style="width: 100%">
+        </div>
        </div>
    </div>
   </body>

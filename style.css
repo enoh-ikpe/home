@@ -1,29 +1,118 @@
-.button1{
-    border-radius: 100px;
-    border:2px solid  hsl(0, 36%, 70%);
-    padding: 10px;
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap");
+body {
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
 }
-.button2{
-    border:2px solid hsl(0, 36%, 70%);
-            height: 50px; 
-            padding-right: 20rem; 
-            border-radius: 25px; 
-            font-size: 14px; 
-            
+.left-side {
+  width: 60%;
+  order: 1;
 }
-h1{
-    letter-spacing: 16px;
-    padding-top:3rem;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+
+.right-side {
+  width: 40%;
+  order: 2;
 }
-.content{
-    display: flex;
-    justify-content: space-around;
+
+.desktop-logo {
+  display: block;
 }
-span{
-    color: hsl(0, 36%, 70%);
+
+.mobile-logo {
+  display: none;
 }
-p{
-    color: hsl(0, 36%, 70%);
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+p {
+  color: #ce9797;
+  line-height: 1.6;
+  text-align: left;
+}
+.logo {
+  width: 182px;
+  padding: 60px 0px;
+}
+.text {
+  padding: 10px;
+  border-radius: 50px;
+  border: 1px solid #f6f0f0;
+  width: 100%;
+}
+.grad {
+  background-image: linear-gradient(to right, #f8bfbf, rgb(238, 140, 140));
+  border-radius: 49px;
+  border: 0px;
+  padding: 10px 28px;
+  right: -23px;
+  top: 1px;
+  position: absolute;
+  box-shadow: 1px 4px 4px 0px #f8bfbf;
+}
+.text:hover {
+  border-color: red;
+}
+span {
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
+}
+h1 {
+  letter-spacing: 10px;
+  font-size: xxx-large;
+  padding-top: 20px;
+}
+.h1 {
+  font-weight: bolder;
+}
+.sub-div {
+  position: absolute;
+}
+input::placeholder {
+  color: #f6f0f0;
+}
+
+.container-fluid {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-side {
+    width: 100%;
+    order: 2;
+    text-align: center;
+  }
+
+  .right-side {
+    width: 100%;
+    order: 1;
+  }
+
+  .right-side img {
+    height: 200px;
+    object-fit: cover;
+    object-position: 0 -30px;
+  }
+
+  .desktop-logo {
+    display: none;
+  }
+
+  .mobile-logo {
+    display: block;
+  }
+  p{
+    text-align: center;
+  }
+  .sub-div{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
 }
